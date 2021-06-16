@@ -6,5 +6,11 @@ function newArrayElement(element, pArray) {
     console.log(pArray);
 }
 
-export {newArrayElement}; // ES6
+function createDiv(index) {
+    let divElement = document.createElement('div');
+    divElement.classList.add(`elementas-${index}`);
+    divElement.innerText = index;
+    return divElement;
+}
+export {newArrayElement, createDiv}; // ES6
 // module.exports.newArrayElement = newArrayElement; // Node
